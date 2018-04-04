@@ -1,6 +1,6 @@
 # basic-rest-api
 
-##Commands to run the project in docker
+## Commands to run the project in docker
 
 Build docker image with present code
 This command executes code written in Dockerfile and builds image with name provided
