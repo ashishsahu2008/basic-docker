@@ -7,3 +7,16 @@ services:
         - .:/usr/src/app
       ports:
         - 5001:80
+    mysqldb:
+      image: mysql:8.0.2
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: myapp
+      ports:
+        - "3306:3306"
+      # /data directory is mapped to var/lib/mysql directory in docker container.
+      # Now mysql data is stored in data directory on host/local machine.
+      # This enables data to persist even when containers are removed and new containers are created.
+      # Also this data/volume can be mounted onto any new container which can use this my sql data
+      volumes:
+      - ./data:/var/lib/mysql
