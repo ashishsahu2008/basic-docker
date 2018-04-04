@@ -1,5 +1,3 @@
-# basic-rest-api
-
 ## Commands to run the project in docker
 
 Build docker image with present code
