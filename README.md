@@ -3,8 +3,8 @@
 Build docker image with present code
 This command executes code written in Dockerfile and builds image with name provided
 ```
-docker build -t <name> <directory of docker file>
-docker build -t rest-project
+docker build . -t <name> <directory of docker file>
+docker build . -t rest-project
 ```
 
 Run docker image in a container. 1 docker image can be run separately into many containers for scaling

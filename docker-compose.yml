@@ -6,7 +6,7 @@ services:
       volumes:
         - .:/usr/src/app
       ports:
-        - 5001:80
+        - 80:80
     mysqldb:
       image: mysql:8.0.2
       environment:
